@@ -1,0 +1,47 @@
+.heroSection {
+  background-image: url("/images/image103.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.middleHeader {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.middleHeader h1 {
+  font-size: 3.5rem;
+  color: transparent;
+  background: linear-gradient(to right,blue,white,red);
+  background-clip: text;
+}
+.middleHeader p {
+  font-weight: 600;
+  font-size: large;
+  color: white;
+}
+.middleHeader form {
+  border-radius: 25%;
+}
+.middleHeader form button {
+  height: 50px;
+  width: 10vw;
+  font-weight: 500;
+  font-size: medium;
+  background-color:rgb(33, 33, 154);
+  color: white;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+}
+.middleHeader form input {
+  height: 50px;
+  width: 40vw;
+  padding: 20px;
+  font-size: medium;
+  margin-top: 30px;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+}

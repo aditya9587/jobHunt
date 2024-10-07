@@ -1,0 +1,38 @@
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 600;
+  font-size: medium;
+  width: 100vw;
+  align-items: center;
+  
+}
+.first {
+  width: 20%;
+  text-align: center;
+}
+.middle {
+  width: 50%;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.last {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.last p{
+  cursor: pointer;
+}
+.last button {
+  background-color:rgb(33, 33, 154);
+  color: white;
+  height: 30px;
+  width: 40%;
+  font-weight: 500;
+  border-radius: 25%;
+  cursor: pointer;
+}
