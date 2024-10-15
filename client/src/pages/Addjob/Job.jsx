@@ -76,14 +76,14 @@ export default function Signup() {
 
           <label htmlFor="">
             Jobtype
-            {/* <input
+            <input
               type="text"
               name=""
               id=""
               placeholder="ENTER YOUR JOB TYPE HERER"
               value={jobValue.jobType}
               onChange={(e)=> setjobValue({ ...jobValue , jobType: e.target.value})}
-            /> */}
+            />
           </label>
 
           <label htmlFor="">
