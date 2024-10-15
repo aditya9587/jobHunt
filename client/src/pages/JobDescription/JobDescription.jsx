@@ -1,5 +1,5 @@
 import React from 'react'
-import "./jobDescription.css"
+import './JobDescription.css'
 import Navbar from '../../components/Navbar/Navbar'
 
 export default function JobDescription() {
