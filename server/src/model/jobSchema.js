@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { userdata } from "./userSchema.js";
 
 const jobSchema = new mongoose.Schema({
   companyName: {

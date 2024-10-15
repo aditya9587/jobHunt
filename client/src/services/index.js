@@ -3,7 +3,7 @@ import axios, { isAxiosError } from "axios";
 export const registerUser = async (data) => {
   try {
     const res = await axios.post(
-      "http://localhost:3000/api/v1/user/register",
+      `${import.meta.env.VITE_BASE_URL}/user/register`,
       data,
       {
         headers: {
@@ -26,7 +26,7 @@ export const registerUser = async (data) => {
 export const loginAuth = async (datavalue) => {
   try {
     const res = await axios.post(
-      "http://localhost:3000/api/v1/user/login",
+      `${import.meta.env.VITE_BASE_URL}/user/login`,
       datavalue,
       {
         headers: {

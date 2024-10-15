@@ -22,5 +22,5 @@ app.use("/api/v1/user", router)
 app.use("/api/v1/job", jobrouter)
 
 app.listen(process.env.PORT, ()=>{
-  console.log("Server is stated")
+  
 })
