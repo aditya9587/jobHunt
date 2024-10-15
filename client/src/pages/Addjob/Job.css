@@ -48,7 +48,7 @@ input{
 }
 .right{
   width: 40%;
-  background-image: url(../images/image102.png);
+  background-image: url(/images/image102.png);
   background-size: 100% 100%;
   color: white;
   text-align: center;
