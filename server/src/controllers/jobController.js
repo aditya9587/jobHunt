@@ -40,7 +40,7 @@ export const createjob = async (req, res) => {
   }
 };
 
-//TO UPDATE THE JOB
+//TO UPDATE/create THE JOB
 export const updatejob = async (req, res) => {
   try {
     const { id } = req.params;
@@ -111,5 +111,7 @@ export const getAllJob = async (req, res) => {
   try {
     const jobs = await jobdata.find({});
     return res.status(200).json({ jobs });
-  } catch (error) {}
+  } catch (error) {
+    console.log("this error in controller")
+  }
 };

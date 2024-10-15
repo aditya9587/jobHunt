@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Job.css";
 import { createjob } from "../../services/jobApi.js";
+import {  useNavigate } from "react-router-dom";
 
 export default function Signup() {
+  const navigate =useNavigate();
   const [jobValue, setjobValue] = useState({
     companyName: "",
     logoUrl: "",
@@ -19,8 +21,11 @@ export default function Signup() {
 
   async function hnadlesubmit(e){
     e.preventDefault();
-    await createjob(jobValue)
-
+   const job= await createjob(jobValue)
+   if(job.status==200){
+    navigate("/")
+   }
+   console.log(job)
   }
   return (
     <div className="container">
@@ -71,14 +76,14 @@ export default function Signup() {
 
           <label htmlFor="">
             Jobtype
-            <input
+            {/* <input
               type="text"
               name=""
               id=""
               placeholder="ENTER YOUR JOB TYPE HERER"
               value={jobValue.jobType}
               onChange={(e)=> setjobValue({ ...jobValue , jobType: e.target.value})}
-            />
+            /> */}
           </label>
 
           <label htmlFor="">
@@ -152,10 +157,10 @@ export default function Signup() {
               onChange={(e)=> setjobValue({ ...jobValue , information: e.target.value})}
             />
           </label>
-        
-            {/* <button>Cancel</button> */}
-            <button type="submit" onClick={hnadlesubmit}>+ Add Job</button>
-          
+          <div className="button-div">
+          <button>Cancel</button>
+          <button type="submit" onClick={hnadlesubmit}>+ Add Job</button>
+          </div>                   
         </form>
       </div>
       <div className="right">Recruiter add job details here</div>

@@ -6,7 +6,7 @@ export const jobrouter = Router();
 
 jobrouter.post("/create", authmiddleware, createjob);
 
-jobrouter.get("/job", getAllJob);
+jobrouter.get("/allJob", getAllJob);
 
 jobrouter.get("/:id",  getJobById);
 

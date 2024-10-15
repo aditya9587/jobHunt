@@ -5,6 +5,8 @@ import Homepage from "./pages/Homepage/Homepage.jsx";
 import Signup from "./pages/register/Signup.jsx"
 import Login from "./pages/login/Login.jsx"
 import "./app.css";
+import Test from "./pages/Test.jsx";
+import JobDescription from "./pages/JobDescription/JobDescription.jsx";
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/editJob" element={<Job />} />
+          <Route path="/test" element={<JobDescription />} /> 
         </Routes>
       </BrowserRouter>
     </div>

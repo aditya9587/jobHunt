@@ -14,7 +14,6 @@ export default function Signup() {
   async function handleLogin(e) {
     e.preventDefault();
     const res = await loginAuth(loginUser);
-    console.log(res.response);
     if (res.status === 200) {
       const token = res.data;
       localStorage.setItem("token", token);

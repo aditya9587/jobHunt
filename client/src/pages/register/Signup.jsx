@@ -22,10 +22,10 @@ export default function login() {
     e.preventDefault();
     if (remember.checked) {
       await registerUser(userValue);
+      navigate("/login")
     } else {
       alert("checkbox empty");
     }
-    // navigate("/")
   }
 
   return (
