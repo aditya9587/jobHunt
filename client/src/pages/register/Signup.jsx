@@ -42,6 +42,7 @@ export default function login() {
               onChange={(e) =>
                 setuserValue({ ...userValue, name: e.target.value })
               }
+              required
             />
             
             <input
@@ -51,6 +52,7 @@ export default function login() {
               onChange={(e) =>
                 setuserValue({ ...userValue, email: e.target.value })
               }
+              required
             />
             <input
               type="number"
@@ -59,6 +61,7 @@ export default function login() {
               onChange={(e) =>
                 setuserValue({ ...userValue, mobile: e.target.value })
               }
+              required
             />
             <input
               type="password"
@@ -67,6 +70,7 @@ export default function login() {
               onChange={(e) =>
                 setuserValue({ ...userValue, password: e.target.value })
               }
+              required
             />
             <p>
               <span>
